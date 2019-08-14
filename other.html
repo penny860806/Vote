@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- 選擇性佈景主題 -->
+	<!-- nav bar   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VOTE</title>
+</head>
+
+<body id="myPage">
+	<div class="jumbotron text-center" id="topic"> <strong><h1>VOTE</h1></strong> </div>
+	<!-- nav   -->
+	<nav class="navbar navbar-inverse navbar-default" data-spy="affix" data-offset-top="390">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand active" href="#myPage">VOTE</a> </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="create.html">CREATE</a></li>
+				<li><a href="voting.html">VOTING</a></li>
+				<li><a href="delete.html">DELETE</a></li>
+				<li class="active"><a href="other.html">OTHER</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 內容   -->
+	<div class="container-fluid" id="other">
+		<div class="row">
+			<p class="f">Hello 你好😄</p>
+			<p class="f">如果你不小心遺失了你的<font color="red">題目刪除編碼</font>或是<font color="red">自訂密碼</font></p>
+			<p class="f">或是有其他使用上的問題</p>
+			<p class="f">歡迎與我聯繫</p>
+			<br>
+			<div class="col-md-5"></div>
+			<div class="col-md-4">
+				<form action="other.php" method="get">
+					<p>請輸入並選擇所需的資訊：</p>
+					<p>題目別(顯示在題目前面的數字)：</p>
+					<input type="text" name="Q_id" style="font-size:14px">
+					<br>
+					<input type="checkbox" name="random" value='1'><font size="4px"> 題目刪除編碼</font><br>
+					<input type="checkbox" name="code" value='1'><font size="4px"> 自訂密碼</font><br>
+					<p>請輸入信箱以便聯繫</p>
+					<input type="email" name="email" required style="font-size:14px">
+					<p>有甚麼其他的話想跟我說的嗎？</p>
+					<input type="text" name="other" style="font-size:14px">
+					<br>
+					<br>
+					<input class="button" type="submit" value="送出">
+					<input class="button" type="reset"> </form>
+			</div>
+		</div>
+		<div style="height: 100px;"> </div>
+	</div>
+	<!--    <div style="height: 10000px;"></div>-->
+	<!--FOOTER section-->
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="back to top"> <span class="glyphicon glyphicon-triangle-top"></span> </a>
+		<p>&copy; 2018, Penny, All Rights Reserved.</p>
+	</footer>
+</body>
+
+</html>

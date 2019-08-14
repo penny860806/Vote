@@ -1,0 +1,212 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+.button {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: coral;
+    box-shadow: 0px 1px 5px #888888;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: darkgray;
+    font-family: 'cwTeXYen', sans-serif;
+    z-index: 9t999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    z-index: 100;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    font-size: 18px;
+    /*    important表示不能被複寫*/
+    color: #F0F0F0!important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    font-size: 20px;
+    color: whitesmoke!important;
+    background-color: dimgrey!important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.affix {
+      top: 0;
+      width: 100%;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top {
+      position: static;
+      top: -35px;
+  }
+  .affix + .container-fluid {
+      padding-top: 95px;
+  }
+
+.row {
+    margin: 0;
+}
+
+.jumbotron {
+    background: url("assets/header.png") center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*    color: coral;*/
+    /*    text-shadow: 0px 0px 10px black;*/
+    color: rgba(, 0, 0.7);
+    font-weight: 800;
+    padding: 100px 25px;
+    font-family: "Archivo Black", sans-serif;
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+#topic h1 {
+    margin-top: 60px;
+    font-size: 100px;
+    color: white;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+#about{
+    padding-top: 60px;
+    font-family: 'cwTeXYen', sans-serif;
+    color: black;
+	padding-bottom: 60px;
+}
+#about .f{
+	font-size: 30px;
+	text-align: center;
+}
+#about .s{
+	font-size: 20px;
+}
+#about strong{
+	color: rgb(41,117,226);
+}
+#about button{
+	font-size: 25px;
+	border-radius: 10px; 
+}
+#create{
+	font-family: 'cwTeXYen', sans-serif;
+}
+#create p{
+	font-size: 20px;
+	font-family: 'cwTeXYen', sans-serif;
+}
+#create .button{
+	font-size: 25px;
+	border-radius: 10px; 
+}
+#create_php{
+	font-family: 'cwTeXYen', sans-serif;
+}
+#create_php p{
+	font-size: 20px;
+	font-family: 'cwTeXYen', sans-serif;
+}
+#create_php .button{
+	font-size: 25px;
+	border-radius: 10px; 
+}
+
+#voting{
+	font-size: 20px;
+	font-family: 'cwTeXYen', sans-serif;
+}
+
+#voting .tou_piao{
+	text-align: center;
+	width: 10%;
+}
+#voting .bian_hou{
+	text-align: center;
+}
+#voting .ti_mu{
+	text-align: left;
+}
+#voting #page{
+	text-align: center;
+}
+
+#delete {
+	font-family: 'cwTeXYen', sans-serif;
+}
+#delete .button{
+	font-size: 25px;
+	border-radius: 10px; 
+}
+
+#delete_{
+	font-family: 'cwTeXYen', sans-serif;
+}
+#delete_ h2{
+	text-align: center;
+}
+#delete_ .button{
+	font-size: 25px;
+	border-radius: 10px; 
+}
+
+#voting_vote{
+	font-family: 'cwTeXYen', sans-serif;
+}
+#voting_vote .button{
+	font-size: 25px;
+	border-radius: 10px; 
+}
+
+#voting_suc{
+	font-family: 'cwTeXYen', sans-serif;
+}
+#voting_suc p{
+	text-align: center;
+	font-size: 30px;
+}
+#voting_suc .button{
+	font-size: 25px;
+	border-radius: 10px; 
+}
+
+#other{
+	font-family: 'cwTeXYen', sans-serif;
+}
+#other .f{
+	font-size: 30px;
+	text-align: center;
+}
+#other p{
+	font-size: 20px;
+	font-family: 'cwTeXYen', sans-serif;
+}
+#other .button{
+	font-size: 25px;
+	border-radius: 10px; 
+}

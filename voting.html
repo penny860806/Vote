@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- 選擇性佈景主題 -->
+	<!-- nav bar   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="chart_1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VOTE</title>
+</head>
+
+<body id="myPage">
+	<div class="jumbotron text-center" id="topic"> <strong><h1>VOTE</h1></strong> </div>
+	<!-- nav   -->
+	<nav class="navbar navbar-inverse navbar-default" data-spy="affix" data-offset-top="390">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand active" href="#myPage">VOTE</a> </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="create.html">CREATE</a></li>
+				<li class="active"><a href="voting.php">VOTING</a></li>
+				<li><a href="delete.html">DELETE</a></li>
+				<li><a href="other.html">OTHER</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 內容   -->
+	<div class="container-fluid" id="voting">
+		<div class="row">
+			<div style="height: 100px;"> </div>
+			<div class="col-md-12">
+				<table>
+					<!--
+					<tr>
+						<td class="tou_piao">投票</td>
+						<td class="bian_hou">||編號||</td>
+						<td class="ti_mu text-center">問題與選項</td>
+					</tr>
+-->
+					<!-- START BLOCK : DATA -->
+					<tr>
+						<td class="tou_piao"><a href="{src}">投票</a></td>
+						<td class="bian_hou">{ID}.</td>
+						<td class="ti_mu">{QUESTION}</td>
+					</tr>
+					<tr>
+						<td class="tou_piao"></td>
+						<td class="bian_hou"></td>
+						<td class="ti_mu container horizontal_ rounded_" style="width:100%">
+							<div class="progress-bar_ horizontal_">
+								<div class="progress-track_">
+									<div class="progress-fill_1" style='width:{Q1}%'> <span>&nbsp;&nbsp;{A1}</span> </div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="tou_piao"></td>
+						<td class="bian_hou"></td>
+						<td class="ti_mu container horizontal_ rounded_" style="width:100%">
+							<div class="progress-bar_ horizontal_">
+								<div class="progress-track_">
+									<div class="progress-fill_2" style="width:{Q2}%"> <span>&nbsp;&nbsp;{A2}</span></div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="tou_piao"></td>
+						<td class="bian_hou"></td>
+						<td class="ti_mu container horizontal_ rounded_" style="width:100%">
+							<div class="progress-bar_ horizontal_">
+								<div class="progress-track_">
+									<div class="progress-fill_3" style="width:{Q3}%"> <span>&nbsp;&nbsp;{A3}</span> </div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="tou_piao"></td>
+						<td class="bian_hou"></td>
+						<td class="ti_mu container horizontal_ rounded_" style="width:100%">
+							<div class="progress-bar_ horizontal_">
+								<div class="progress-track_">
+									<div class="progress-fill_4" id="Q4" style="width:{Q4}%"> <span>&nbsp;&nbsp;{A4}</span> </div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- END BLOCK : DATA -->
+				</table>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-12" id="page">
+				<p>總共{NUM}筆資料 | 目前在第{PAGE}頁 | 總共{TOTAL}頁</p>
+				<p>第
+					<!-- START BLOCK : PN -->
+					<a href=?page={N}>{N}</a>
+					<!-- END BLOCK : PN -->
+					頁</p>
+			</div>
+		</div>
+		<div style="height: 100px;"> </div>
+	</div>
+	<!--    <div style="height: 10000px;"></div>-->
+	<!--FOOTER section-->
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="back to top"> <span class="glyphicon glyphicon-triangle-top"></span> </a>
+		<p>&copy; 2018, Penny, All Rights Reserved.</p>
+	</footer>
+</body>
+
+</html>

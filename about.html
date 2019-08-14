@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- 選擇性佈景主題 -->
+	<!-- nav bar   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VOTE</title>
+</head>
+
+<body id="myPage">
+	<div class="jumbotron text-center" id="topic"> <strong><h1>VOTE</h1></strong> </div>
+	<!-- nav   -->
+	<nav class="navbar navbar-inverse navbar-default" data-spy="affix" data-offset-top="390">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand active" href="#myPage">VOTE</a> </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="about.html" >ABOUT</a></li>
+				<li><a href="create.html">CREATE</a></li>
+				<li><a href="voting.html">VOTING</a></li>
+				<li><a href="delete.html">DELETE</a></li>
+				<li><a href="other.html">OTHER</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 內容   -->
+	<div class="container-fluid" id="about">
+		<div class="row">
+			<p class="f">Hi 大家好😄</p>
+			<p class="f">歡迎大家來到<strong> VOTE 來投票吧</strong></p>
+			<br>
+			<div class="text-center">
+				<button onclick="myFunction()">源起</button>
+				<button onclick="myFunction1()">介紹</button>
+			</div>
+			<br>
+			<div class="s">
+				<div class="col-md-5"></div>
+				<div class="col-md-4" id="demo">
+					
+				</div>
+			</div>
+			<div style="height: 100px;"> </div>
+		</div>
+	</div>
+	<!--    <div style="height: 10000px;"></div>-->
+	<!--FOOTER section-->
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="back to top"> <span class="glyphicon glyphicon-triangle-top"></span> </a>
+		<p>&copy; 2018, Penny, All Rights Reserved.</p>
+	</footer>
+</body>
+<script>
+	function myFunction() {
+		document.getElementById("demo").innerHTML = "<p>相信大家都曾經有過</p><ul type='none'><li><font color='green'>😭</font> 想問卻不敢問</li><li><font color='green'>😭</font> 覺得自己選擇障礙</li><li><font color='green'>😭</font> 好無聊</li><li><font color='green'>😭</font> 就是想投票</li></ul><p>的時刻吧</p><p>所以，<strong> VOTE 來投票吧 </strong>就因此而產生了 😁</p><p>在這裡，你可以</p><ul type='none'><li><font color='red'>❤</font> 想問就問</li><li><font color='red'>❤</font> 不用再擔心選擇障礙</li><li><font color='red'>❤</font> 好有趣</li><li><font color='red'>❤</font> 想投票就投票</li></ul><p>--------------------------</p><p>除此之外，我們還比較了一些平常大家比較常用的投票系統。</p><p>經過分析之後，</p><p>我們列出了我們的優點：</p><ul type='none'><li><font color='blue'>✔</font> 匿名</li><li><font color='blue'>✔</font> 可以限定投票人</li><li><font color='blue'>✔</font> 方便</li><li><font color='blue'>✔</font> 沒有時限</li><li><font color='blue'>✔</font> 可以多一點選項</li><li><font color='blue'>✔</font> 可以刪除問題</li></ul><p>--------------------------</p><p>希望大家可以在使用的時候能有愉悅的心情</p><p>當然，如果你使用的很不開心，請馬上連絡我們</p><p> <font color='yellow'>🌟</font> email：<a href='mailto:wen86806@gmail.com' class='email_href' style='text decoration: none;'>wen86806@gmail.com</a></p><p><font color='yellow'>🌟</font>其他方式：<a href='other.html' style='text decoration: none;'>聯絡</a></p><p>我們會盡快為您服務 <font color='green'>💃</font></p><p>最後，我們再次感謝你的使用</p><p>祝使用順利 😏</p>";
+	}
+
+	function myFunction1() {
+		document.getElementById("demo").innerHTML = "<p><font color='blue'>🔲</font> CREATE：</p><p>&nbsp;&nbsp;在Create中你可以建立問題</p><p>&nbsp;&nbsp;題目限制<font color='red'>100</font>個字，選項限定<font color='red'>10</font>個字</p><p>&nbsp;&nbsp;輸入完並按下送出之後，會產生一組<font color='red'>編號</font></p><p>&nbsp;&nbsp;<font color='red'>編號</font>是用來題目刪除，請牢記此編號</p><p><font color='blue'>🔲</font> VOTING：</p><p>&nbsp;&nbsp;在Voting中你可以</p><ul type='none'><li><font color='orange'>☀</font> 瀏覽所有已經被提出來的問題</li><li><font color='orange'>☀</font> 也可以看到所有問題的投票結果</li></ul><p><font color='blue'>🔲</font> DELETE：</p><p>&nbsp;&nbsp;當你覺得你的題目已經不需要的時候</p><p>&nbsp;&nbsp;請記得來這裡將題目刪除</p><p>&nbsp;&nbsp;不要留下殘骸喔</p><p><font color='blue'>🔲</font> OTHER：</p><p>&nbsp;&nbsp;🔺如果你有任何需求，可以在這裡與我們聯繫喔</p>";
+	}
+</script>
+
+</html>

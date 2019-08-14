@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- 選擇性佈景主題 -->
+	<!-- nav bar   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="chart_1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VOTE</title>
+</head>
+
+<body id="myPage">
+	<h1 class="text-center">察看回復</h1>
+	<p><a href="resee.php">查看資料庫</a></p>
+	<!-- 內容   -->
+	<div class="container-fluid" id="voting">
+		<div class="row">
+			<div>
+				<table>
+					<tr>
+						<td class="tou_piao"></td>
+						<td class="tou_piao">題號</td>
+						<td class="bian_hou">信箱</td>
+						<td class="ti_mu">Random</td>
+						<td class="ti_mu">code</td>
+						<td class="ti_mu">其他想說的話</td>
+					</tr>
+					<!-- START BLOCK : DATA -->
+					<tr>
+						<td class="tou_piao">| {ID} |</td>
+						<td class="tou_piao">第 {QID} 題</td>
+						<td class="bian_hou"> {EMAIL} </td>
+						<td class="ti_mu">|{RAND}</td>
+						<td class="ti_mu">|{CODE}</td>
+						<td class="ti_mu">|{OTHER}</td>
+					</tr>
+					<tr></tr>
+					<!-- END BLOCK : DATA -->
+				</table>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-12" id="page">
+				<p>總共{NUM}筆資料 | 目前在第{PAGE}頁 | 總共{TOTAL}頁</p>
+				<p>第
+					<!-- START BLOCK : PN -->
+					<a href=?page={N}>{N}</a>
+					<!-- END BLOCK : PN -->
+					頁</p>
+			</div>
+		</div>
+		<div style="height: 100px;"> </div>
+	</div>
+	<!--    <div style="height: 10000px;"></div>-->
+	<!--FOOTER section-->
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="back to top"> <span class="glyphicon glyphicon-triangle-top"></span> </a>
+		<p>&copy; 2018, Penny, All Rights Reserved.</p>
+	</footer>
+</body>
+
+</html>
